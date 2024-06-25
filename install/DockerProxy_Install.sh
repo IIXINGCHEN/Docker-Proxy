@@ -495,7 +495,7 @@ if [ "$package_manager" = "dnf" ] || [ "$package_manager" = "yum" ]; then
         INFO "Nginx 已经安装."
     else
         INFO "正在安装Nginx程序，请稍候..."
-        NGINX="nginx-1.24.0-1.el${OSVER}.ngx.x86_64.rpm"
+        NGINX="nginx-1.26.1-2.el${OSVER}.ngx.x86_64.rpm"
 
         rm -f ${NGINX}
         wget http://nginx.org/packages/centos/${OSVER}/x86_64/RPMS/${NGINX} &>/dev/null
